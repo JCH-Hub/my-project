@@ -1,5 +1,4 @@
 [build]
-  command = ""
   publish = "."
 
   ## Uncomment to use this redirect for Single Page Applications like create-react-app.
