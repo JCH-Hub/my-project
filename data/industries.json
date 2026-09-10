@@ -1,0 +1,56 @@
+[
+  {
+    "id": "finance",
+    "name": "금융",
+    "description": "규제 대응과 보안을 고려한 금융 ICT 인프라",
+    "services": ["금융 전용 네트워크", "금융 클라우드", "AI 컨택센터", "보안 솔루션 (DDoS, 망분리, VPN)", "데이터센터 (규제 대응, IDC)"]
+  },
+  {
+    "id": "public",
+    "name": "공공",
+    "description": "공공기관 전용 회선과 디지털 행정 환경",
+    "services": ["공공기관 전용 회선", "디지털 행정 플랫폼", "망분리·보안 서비스", "AI Copilot 행정지원", "원격근무·영상회의"]
+  },
+  {
+    "id": "manufacturing",
+    "name": "제조",
+    "description": "스마트팩토리와 생산성 향상을 위한 연결 환경",
+    "services": ["5G 스마트팩토리", "IoT 센서 네트워크", "AI 기반 품질검사", "AR/VR 원격지원", "빅데이터 생산성 분석"]
+  },
+  {
+    "id": "medical",
+    "name": "의료",
+    "description": "의료 데이터와 환자 응대를 위한 안전한 인프라",
+    "services": ["의료정보 클라우드", "원격진료 플랫폼", "AI 영상판독", "환자 상담 AI 컨택센터", "의료기관 보안 서비스", "On-Kiosk 무인 접수"]
+  },
+  {
+    "id": "retail-logistics",
+    "name": "유통·물류",
+    "description": "매장과 물류 거점을 연결하는 운영 솔루션",
+    "services": ["스마트 물류 플랫폼", "매장 인터넷·와이파이", "POS·결제안심 인터넷", "CCTV·영상보안", "디지털 사이니지·매장 홍보", "사장이지 플랫폼"]
+  },
+  {
+    "id": "education",
+    "name": "교육",
+    "description": "AI 학습과 스마트 캠퍼스를 위한 교육 인프라",
+    "services": ["AI 학습 플랫폼", "온라인 강의·화상회의", "클라우드 기반 행정 시스템", "스마트 캠퍼스 네트워크", "디지털 교재·콘텐츠"]
+  },
+  {
+    "id": "academy",
+    "name": "학원",
+    "description": "학원 운영과 수업 환경에 맞춘 기업상품",
+    "services": ["Biz 인터넷", "Giga WiFi", "웹팩스", "스마트컨퍼런스", "비즈세이퍼 보안"]
+  },
+  {
+    "id": "franchise",
+    "name": "프랜차이즈",
+    "description": "다점포 운영과 매장 홍보에 맞춘 기업상품",
+    "services": ["전국대표번호·0506 번호", "컨퍼런스콜", "비즈메시징·말하는 메시지", "On-Air/On-Ad (사내방송·디지털 사이니지)", "기업 B tv (매장 홍보)"]
+  },
+  {
+    "id": "leisure-health",
+    "name": "레저/헬스",
+    "description": "회원 관리와 고객용 네트워크를 위한 기업상품",
+    "services": ["Giga Biz 인터넷", "WiFi Hosting (회원용)", "뮤직링 (통화연결음)", "Simple CRM (고객관리)", "보안 단말 (UTM, NAC)"]
+  }
+]
