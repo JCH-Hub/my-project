@@ -17,7 +17,7 @@ function showTab(tabName) {
   }
 }
 
-function showDetail(title, eyebrow, description, items, sourceLabel, sourceUrl, returnTab) {
+function showDetail(title, eyebrow, description, items, returnTab) {
   document.querySelectorAll(".tab-panel").forEach((panel) => { panel.hidden = true; });
   document.getElementById("detail").hidden = false;
   document.getElementById("detail-content").innerHTML = `
@@ -27,7 +27,6 @@ function showDetail(title, eyebrow, description, items, sourceLabel, sourceUrl, 
     <ul class="detail-points">${items.map((item) => `<li>${item}</li>`).join("")}</ul>
     <div class="detail-actions">
       <a class="btn-primary" href="#support" data-tab-target="support">이 상품 상담하기</a>
-      <a class="source-link" href="${sourceUrl}" target="_blank" rel="noopener">${sourceLabel} 공식 사이트</a>
     </div>
   `;
   document.getElementById("detail-back").onclick = () => showTab(returnTab);
@@ -77,7 +76,7 @@ function renderIndustries(industries) {
           "사업장 규모와 운영 환경에 맞춘 구성 상담",
           "네트워크·통신·보안 상품 연계 가능",
           "설치 및 이용 조건은 상담을 통해 안내"
-        ], "SK브로드밴드", "https://biz.skbroadband.com/", "industries");
+        ], "industries");
       });
     });
   };
@@ -145,7 +144,7 @@ function renderProducts(products, activeCategory) {
         `상태: ${product.status === "active" ? "신규 가입 가능" : "기존 가입자 유지"}`,
         `요금: ${product.price}`,
         "사업장 환경과 이용 목적에 맞춰 구성 상담"
-      ], "SK브로드밴드", "https://biz.skbroadband.com/", "products");
+      ], "products");
     });
   });
 }
