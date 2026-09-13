@@ -34,6 +34,51 @@ function showDetail(title, eyebrow, description, items, returnTab) {
   history.replaceState(null, "", `#detail-${returnTab}`);
 }
 
+function showProductDetail(product, returnTab) {
+  document.querySelectorAll(".tab-panel").forEach((panel) => { panel.hidden = true; });
+  document.getElementById("detail").hidden = false;
+  document.getElementById("detail-content").innerHTML = `
+    <span class="detail-eyebrow">${product.category}${product.group ? ` · ${product.group}` : ""}</span>
+    <h1>${product.name}</h1>
+    <p class="detail-description">${product.description}</p>
+    <div class="detail-subtabs" role="tablist">
+      <button type="button" class="detail-subtab active" data-subtab="features" role="tab" aria-selected="true">서비스 특징</button>
+      <button type="button" class="detail-subtab" data-subtab="pricing" role="tab" aria-selected="false">요금 안내</button>
+    </div>
+    <div class="detail-subpanel" data-subpanel="features">
+      <ul class="detail-points">${product.features.map((item) => `<li>${item}</li>`).join("")}</ul>
+    </div>
+    <div class="detail-subpanel" data-subpanel="pricing" hidden>
+      <table class="price-table">
+        <tbody>
+          ${product.pricing.tiers.map((tier) => `
+            <tr><th>${tier.label}</th><td>${tier.value}</td></tr>
+          `).join("")}
+        </tbody>
+      </table>
+      <p class="price-note">${product.pricing.note}</p>
+    </div>
+    <div class="detail-actions">
+      <a class="btn-primary" href="#support" data-tab-target="support">이 상품 상담하기</a>
+    </div>
+  `;
+  document.querySelectorAll(".detail-subtab").forEach((button) => {
+    button.addEventListener("click", () => {
+      document.querySelectorAll(".detail-subtab").forEach((btn) => {
+        const isActive = btn === button;
+        btn.classList.toggle("active", isActive);
+        btn.setAttribute("aria-selected", String(isActive));
+      });
+      document.querySelectorAll(".detail-subpanel").forEach((panel) => {
+        panel.hidden = panel.dataset.subpanel !== button.dataset.subtab;
+      });
+    });
+  });
+  document.getElementById("detail-back").onclick = () => showTab(returnTab);
+  document.querySelector('.detail-actions [data-tab-target="support"]').addEventListener("click", () => showTab("support"));
+  history.replaceState(null, "", `#detail-${returnTab}`);
+}
+
 async function loadProducts() {
   const res = await fetch("data/products.json");
   return res.json();
@@ -84,6 +129,10 @@ function renderIndustries(industries) {
   list.querySelectorAll(".industry-select").forEach((button) => {
     button.addEventListener("click", () => {
       renderServices(industries.find((industry) => industry.id === button.dataset.industryId));
+      const header = document.querySelector(".site-header");
+      const services = document.getElementById("industry-services");
+      const offset = services.getBoundingClientRect().top + window.scrollY - header.offsetHeight - 16;
+      window.scrollTo({ top: offset, behavior: "smooth" });
     });
   });
   renderServices(industries[0]);
@@ -140,11 +189,7 @@ function renderProducts(products, activeCategory) {
     const product = products.find((item) => item.id === card.dataset.productId);
     card.addEventListener("click", (event) => {
       event.preventDefault();
-      showDetail(product.name, `${product.category} · ${product.group || "기업상품"}`, product.description, [
-        `상태: ${product.status === "active" ? "신규 가입 가능" : "기존 가입자 유지"}`,
-        `요금: ${product.price}`,
-        "사업장 환경과 이용 목적에 맞춰 구성 상담"
-      ], "products");
+      showProductDetail(product, "products");
     });
   });
 }
@@ -194,5 +239,12 @@ const initialTab = ["industries", "products", "support"].includes(window.locatio
   ? window.location.hash.slice(1)
   : "industries";
 showTab(initialTab);
+
+window.addEventListener("hashchange", () => {
+  const tabName = window.location.hash.slice(1);
+  if (["industries", "products", "support"].includes(tabName)) {
+    showTab(tabName);
+  }
+});
 
 init();

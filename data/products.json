@@ -1,80 +1,1811 @@
 [
-  { "id": "int-biz", "name": "기업 초고속인터넷 (Biz인터넷)", "category": "유선 인터넷", "group": "기업 인터넷", "status": "active", "launchDate": "2024-01-01", "description": "속도는 높이고 요금은 낮춘 합리적인 기업용 인터넷 서비스.", "price": "상담 문의" },
-  { "id": "int-premium-prebeam", "name": "인터넷전용회선 프리빔", "category": "유선 인터넷", "group": "프리미엄 인터넷", "status": "active", "launchDate": "2024-01-01", "description": "고품질 전용 대역폭 기반 프리미엄 인터넷 서비스.", "price": "상담 문의" },
-  { "id": "int-premium-id", "name": "인터넷전용회선 I/D", "category": "유선 인터넷", "group": "프리미엄 인터넷", "status": "active", "launchDate": "2024-01-01", "description": "안정적인 전용회선 기반의 프리미엄 인터넷 서비스.", "price": "상담 문의" },
-  { "id": "int-edu", "name": "교육전산망 인터넷서비스", "category": "유선 인터넷", "group": "프리미엄 인터넷", "status": "active", "launchDate": "2024-01-01", "description": "교육기관 전산망 전용의 프리미엄 인터넷 서비스.", "price": "상담 문의" },
-  { "id": "line-domestic", "name": "국내전용회선", "category": "유선 인터넷", "group": "전용회선", "status": "active", "launchDate": "2024-01-01", "description": "지사 간 안정적인 데이터 연결을 위한 국내 전용회선.", "price": "상담 문의" },
-  { "id": "line-carrier-ethernet", "name": "캐리어이더넷", "category": "유선 인터넷", "group": "전용회선", "status": "active", "launchDate": "2024-01-01", "description": "이더넷 기반의 고속 광대역 전용회선.", "price": "상담 문의" },
-  { "id": "line-qkd", "name": "양자암호전용회선", "category": "유선 인터넷", "group": "전용회선", "status": "active", "launchDate": "2024-01-01", "description": "양자키분배(QKD) 기술을 적용한 초고보안 전용회선.", "price": "상담 문의" },
-  { "id": "line-pqc", "name": "양자내성암호전용회선", "category": "유선 인터넷", "group": "전용회선", "status": "active", "launchDate": "2024-01-01", "description": "양자컴퓨터 공격에 대비한 내성암호 적용 전용회선.", "price": "상담 문의" },
-  { "id": "line-broadcast", "name": "방송전용회선", "category": "유선 인터넷", "group": "전용회선", "status": "active", "launchDate": "2024-01-01", "description": "방송용 영상·데이터 전송에 특화된 전용회선.", "price": "상담 문의" },
-  { "id": "line-vpn", "name": "VPN", "category": "유선 인터넷", "group": "전용회선", "status": "active", "launchDate": "2024-01-01", "description": "가상사설망 기반의 보안 네트워크 연결 서비스.", "price": "상담 문의" },
-  { "id": "line-global", "name": "국제데이터", "category": "유선 인터넷", "group": "전용회선", "status": "active", "launchDate": "2024-01-01", "description": "해외 지사·거점 간 데이터 연결 전용회선 서비스.", "price": "상담 문의" },
-
-  { "id": "tel-analog", "name": "일반전화(중계선)", "category": "통신", "group": "기업전화", "status": "active", "launchDate": "2024-01-01", "description": "기본적인 중계선 기반의 기업 전화 서비스.", "price": "상담 문의" },
-  { "id": "tel-voip-line", "name": "인터넷전화 실선", "category": "통신", "group": "기업전화", "status": "active", "launchDate": "2024-01-01", "description": "인터넷 기반의 전용 인터넷전화 솔루션.", "price": "상담 문의" },
-  { "id": "tel-voip-pbx", "name": "인터넷전화(교환기설치형)", "category": "통신", "group": "기업전화", "status": "active", "launchDate": "2024-01-01", "description": "교환기(PBX) 방식으로 구성하는 인터넷전화 서비스.", "price": "상담 문의" },
-  { "id": "tel-mobicall", "name": "모비콜(Webex)", "category": "통신", "group": "기업전화", "status": "active", "launchDate": "2024-01-01", "description": "화상회의 및 협업을 지원하는 솔루션.", "price": "상담 문의" },
-  { "id": "tel-international", "name": "국제전화", "category": "통신", "group": "기업전화", "status": "active", "launchDate": "2024-01-01", "description": "해외 통화를 위한 국제전화 서비스.", "price": "상담 문의" },
-  { "id": "tel-national-number", "name": "전국대표번호", "category": "통신", "group": "기업전화", "status": "active", "launchDate": "2024-01-01", "description": "전국 어디서나 동일하게 사용하는 대표번호 서비스.", "price": "상담 문의" },
-  { "id": "tel-080", "name": "080수신자부담전화", "category": "통신", "group": "기업전화", "status": "active", "launchDate": "2024-01-01", "description": "고객이 통화료를 부담하지 않는 착신과금 서비스.", "price": "상담 문의" },
-  { "id": "tel-050", "name": "050안심번호", "category": "통신", "group": "기업전화", "status": "active", "launchDate": "2024-01-01", "description": "개인정보를 보호하는 안심번호 서비스.", "price": "상담 문의" },
-  { "id": "cc-cloud", "name": "클라우드 컨택센터", "category": "통신", "group": "콜센터(컨택센터)", "status": "active", "launchDate": "2024-01-01", "description": "클라우드 기반의 상담·고객관리 서비스.", "price": "상담 문의" },
-  { "id": "cc-omni", "name": "옴니채널 컨택센터", "category": "통신", "group": "콜센터(컨택센터)", "status": "active", "launchDate": "2024-01-01", "description": "업종별 특화 기능을 제공하는 다중채널 컨택센터.", "price": "상담 문의" },
-  { "id": "cc-custom", "name": "업종맞춤형 컨택센터", "category": "통신", "group": "콜센터(컨택센터)", "status": "active", "launchDate": "2024-01-01", "description": "산업별 특화 기능을 제공하는 맞춤형 컨택센터.", "price": "상담 문의" },
-  { "id": "cc-webfax", "name": "웹팩스", "category": "통신", "group": "콜센터(컨택센터)", "status": "active", "launchDate": "2024-01-01", "description": "팩스 기기 없이 인터넷으로 팩스를 송수신하는 서비스.", "price": "상담 문의" },
-  { "id": "premise-comm", "name": "구내통신", "category": "통신", "group": "구내통신", "status": "active", "launchDate": "2024-01-01", "description": "빌딩 단위 맞춤형 통신 인프라 구축 서비스.", "price": "상담 문의" },
-  { "id": "msg-biz", "name": "비즈메시징", "category": "통신", "group": "메시징", "status": "active", "launchDate": "2024-01-01", "description": "안정적인 대량 메시지 발송 서비스.", "price": "상담 문의" },
-  { "id": "msg-receive-national", "name": "메시지 수신(전국대표번호)", "category": "통신", "group": "메시징", "status": "active", "launchDate": "2024-01-01", "description": "전국대표번호로 메시지를 수신하는 서비스.", "price": "상담 문의" },
-  { "id": "msg-reject-080", "name": "메시지 수신거부(080)", "category": "통신", "group": "메시징", "status": "active", "launchDate": "2024-01-01", "description": "080번호의 메시지 수신을 거부하는 기능.", "price": "상담 문의" },
-  { "id": "msg-thankyou-national", "name": "땡큐메시지(전국대표번호)", "category": "통신", "group": "메시징", "status": "active", "launchDate": "2024-01-01", "description": "전국대표번호 기반 부재중 응답 메시지 서비스.", "price": "상담 문의" },
-  { "id": "msg-thankyou-voip", "name": "땡큐메시지(인터넷전화)", "category": "통신", "group": "메시징", "status": "active", "launchDate": "2024-01-01", "description": "인터넷전화 기반 부재중 응답 메시지 서비스.", "price": "상담 문의" },
-  { "id": "tel-caller-id", "name": "발신자정보표시(비즈레터링)", "category": "통신", "group": "기업전화 부가서비스", "status": "active", "launchDate": "2024-01-01", "description": "발신 시 기업 정보를 표시하는 서비스.", "price": "상담 문의" },
-  { "id": "tel-musicring", "name": "비즈통화연결음(뮤직링)", "category": "통신", "group": "기업전화 부가서비스", "status": "active", "launchDate": "2024-01-01", "description": "통화 연결 대기 중 음악·안내를 제공하는 서비스.", "price": "상담 문의" },
-  { "id": "tel-simple-crm", "name": "통화고객관리(Simple CRM)", "category": "통신", "group": "기업전화 부가서비스", "status": "active", "launchDate": "2024-01-01", "description": "통화 기록 기반의 간편 고객관리 서비스.", "price": "상담 문의" },
-  { "id": "tel-ai-recording", "name": "AI 비즈레코딩", "category": "통신", "group": "기업전화 부가서비스", "status": "active", "launchDate": "2024-01-01", "description": "통화 녹취 및 AI 분석 서비스.", "price": "상담 문의" },
-
-  { "id": "sec-soda", "name": "주문형 네트워크 보안(SODA)", "category": "정보보안", "group": "보안 장비 서비스", "status": "active", "launchDate": "2024-01-01", "description": "보안 위협으로부터 정보자산을 지키는 관리형 네트워크 보안 서비스.", "price": "상담 문의" },
-  { "id": "sec-utm-lease", "name": "통합보안(임대형)", "category": "정보보안", "group": "보안 장비 서비스", "status": "active", "launchDate": "2024-01-01", "description": "보안 기능을 포함한 통합 솔루션을 임차 방식으로 제공.", "price": "상담 문의" },
-  { "id": "sec-utm-soda-lease", "name": "UTM/SODA 임대서비스", "category": "정보보안", "group": "보안 장비 서비스", "status": "active", "launchDate": "2024-01-01", "description": "통합 위협 관리 및 네트워크 보안 솔루션 임대 서비스.", "price": "상담 문의" },
-  { "id": "sec-vuln-analysis", "name": "취약점 분석", "category": "정보보안", "group": "보안 컨설팅", "status": "active", "launchDate": "2024-01-01", "description": "자동화 솔루션으로 보안 취약점을 파악하는 분석 서비스.", "price": "상담 문의" },
-  { "id": "sec-pentest", "name": "모의해킹", "category": "정보보안", "group": "보안 컨설팅", "status": "active", "launchDate": "2024-01-01", "description": "최신 해킹 동향을 반영한 모의 침투 테스트 서비스.", "price": "상담 문의" },
-  { "id": "sec-isms-p", "name": "ISMS-P 인증 컨설팅", "category": "정보보안", "group": "보안 컨설팅", "status": "active", "launchDate": "2024-01-01", "description": "정보보호관리체계(ISMS-P) 인증 취득 지원 컨설팅.", "price": "상담 문의" },
-  { "id": "sec-email", "name": "기업 이메일 보안", "category": "정보보안", "group": "기업 이메일 보안", "status": "active", "launchDate": "2024-01-01", "description": "이메일을 표적으로 한 사이버 공격을 탐지·방어하는 솔루션.", "price": "상담 문의" },
-  { "id": "sec-ddos-saas", "name": "DDoS클린존(서비스형)", "category": "정보보안", "group": "DDoS 방어", "status": "active", "launchDate": "2024-01-01", "description": "클라우드 기반 분산서비스거부(DDoS) 공격 방어 서비스.", "price": "상담 문의" },
-  { "id": "sec-ddos-onprem", "name": "DDoS클린존(구축형)", "category": "정보보안", "group": "DDoS 방어", "status": "active", "launchDate": "2024-01-01", "description": "자체 구축형 DDoS 공격 방어 솔루션.", "price": "상담 문의" },
-  { "id": "sec-waf", "name": "Cloud WAF(웹방화벽)", "category": "정보보안", "group": "Cloud WAF", "status": "active", "launchDate": "2024-01-01", "description": "웹사이트를 해킹 위협으로부터 보호하는 클라우드 웹방화벽.", "price": "상담 문의" },
-  { "id": "sec-endpoint", "name": "주문형 엔드포인트 보안", "category": "정보보안", "group": "정보보호 솔루션", "status": "active", "launchDate": "2024-01-01", "description": "단말기를 보호하는 주문형 엔드포인트 보안 솔루션.", "price": "상담 문의" },
-  { "id": "sec-db-encryption", "name": "DB 암호화", "category": "정보보안", "group": "정보보호 솔루션", "status": "active", "launchDate": "2024-01-01", "description": "데이터베이스 정보를 암호화하여 보호하는 서비스.", "price": "상담 문의" },
-  { "id": "sec-bizsafer", "name": "비즈세이퍼", "category": "정보보안", "group": "정보보호 솔루션", "status": "active", "launchDate": "2024-01-01", "description": "인터넷 위협으로부터 기업 정보를 방어하는 서비스.", "price": "상담 문의" },
-  { "id": "sec-home-network", "name": "홈네트워크 보안서비스", "category": "정보보안", "group": "홈네트워크 보안", "status": "active", "launchDate": "2024-01-01", "description": "공동주택 등 건물의 망 분리 보안 솔루션.", "price": "상담 문의" },
-
-  { "id": "cloud-pc-onprem", "name": "Cloud PC(구축형)", "category": "Cloud", "status": "active", "launchDate": "2024-01-01", "description": "고객사에 직접 구축하고 운영하는 VDI 기반 Cloud PC 서비스.", "price": "상담 문의" },
-  { "id": "cloud-pc-saas", "name": "Cloud PC(서비스형)", "category": "Cloud", "status": "active", "launchDate": "2024-01-01", "description": "데이터센터 인프라와 운영을 위탁하는 DaaS 방식의 가상 데스크톱 서비스.", "price": "상담 문의" },
-  { "id": "cloud-secure-recording", "name": "클라우드 보안 녹음", "category": "Cloud", "status": "active", "launchDate": "2024-01-01", "description": "이중인증 기반 관리자 페이지에서 상시 청음·다운로드가 가능한 통신 녹음 서비스.", "price": "상담 문의" },
-
-  { "id": "media-btv", "name": "기업 B tv", "category": "미디어", "status": "active", "launchDate": "2024-01-01", "description": "사업장에 맞춤형 미디어 환경을 제공하는 방송 서비스.", "price": "상담 문의" },
-  { "id": "media-onair-onad", "name": "On-Air/On-Ad", "category": "미디어", "status": "active", "launchDate": "2024-01-01", "description": "매장·사업장에서 타겟 맞춤형 광고를 송출하는 서비스.", "price": "상담 문의" },
-  { "id": "media-pharmacy-kiosk", "name": "약국 On-Kiosk", "category": "미디어", "status": "active", "launchDate": "2024-01-01", "description": "약국의 처방전 접수·결제를 무인으로 지원하는 키오스크 서비스.", "price": "상담 문의" },
-
-  { "id": "idc-intro", "name": "IDC 소개", "category": "Data Center", "group": "IDC", "status": "active", "launchDate": "2024-01-01", "description": "최첨단 인프라와 광대역 네트워크 기반의 24시간 365일 데이터센터 서비스.", "price": "상담 문의" },
-  { "id": "idc-security", "name": "보안", "category": "Data Center", "group": "부가서비스", "status": "active", "launchDate": "2024-01-01", "description": "IDC 이용 고객을 위한 정보 자산 보호 부가서비스.", "price": "상담 문의" },
-  { "id": "idc-ddos", "name": "디도스보안", "category": "Data Center", "group": "부가서비스", "status": "active", "launchDate": "2024-01-01", "description": "IDC 이용 고객을 위한 분산 공격 방어 부가서비스.", "price": "상담 문의" },
-  { "id": "idc-backup", "name": "백업", "category": "Data Center", "group": "부가서비스", "status": "active", "launchDate": "2024-01-01", "description": "데이터 백업 및 복구 부가서비스.", "price": "상담 문의" },
-  { "id": "idc-managed", "name": "Managed 운영대행", "category": "Data Center", "group": "부가서비스", "status": "active", "launchDate": "2024-01-01", "description": "IDC 운영을 전문가에게 위탁하는 서비스.", "price": "상담 문의" },
-  { "id": "idc-sw-lease", "name": "S/W 임대서비스", "category": "Data Center", "group": "부가서비스", "status": "active", "launchDate": "2024-01-01", "description": "소프트웨어 라이선스를 임대하는 서비스.", "price": "상담 문의" },
-  { "id": "idc-server-hosting", "name": "서버 호스팅", "category": "Data Center", "group": "부가서비스", "status": "active", "launchDate": "2024-01-01", "description": "물리 서버를 임대·호스팅하는 서비스.", "price": "상담 문의" },
-  { "id": "idc-colocation", "name": "Colocation(상면/설비임대)", "category": "Data Center", "group": "Colocation", "status": "active", "launchDate": "2024-01-01", "description": "IDC 상면 및 설비를 임대하는 코로케이션 서비스.", "price": "상담 문의" },
-  { "id": "cdn-streaming", "name": "스트리밍", "category": "Data Center", "group": "컨텐츠전송서비스(CDN)", "status": "active", "launchDate": "2024-01-01", "description": "영상 콘텐츠를 실시간 전송하는 CDN 스트리밍 서비스.", "price": "상담 문의" },
-  { "id": "cdn-download", "name": "다운로드", "category": "Data Center", "group": "컨텐츠전송서비스(CDN)", "status": "active", "launchDate": "2024-01-01", "description": "파일 다운로드를 가속화하는 CDN 서비스.", "price": "상담 문의" },
-  { "id": "cdn-image", "name": "이미지 전송", "category": "Data Center", "group": "컨텐츠전송서비스(CDN)", "status": "active", "launchDate": "2024-01-01", "description": "이미지 콘텐츠를 최적화 전송하는 CDN 서비스.", "price": "상담 문의" },
-
-  { "id": "ms-lte-vpn", "name": "LTE Modem/VPN", "category": "Managed Service", "group": "Network Infra", "status": "active", "launchDate": "2024-01-01", "description": "모바일 네트워크와 VPN을 결합한 연결 솔루션.", "price": "상담 문의" },
-  { "id": "ms-switch-router", "name": "Switch/Router", "category": "Managed Service", "group": "Network Infra", "status": "active", "launchDate": "2024-01-01", "description": "네트워크 장비를 제공하는 인프라 서비스.", "price": "상담 문의" },
-  { "id": "ms-smart-access", "name": "Smart Access", "category": "Managed Service", "group": "Network Infra", "status": "active", "launchDate": "2024-01-01", "description": "고객 맞춤형 스마트 네트워크 접근 서비스.", "price": "상담 문의" },
-  { "id": "ms-security-ops", "name": "보안(DB암호화/접근제어 등)", "category": "Managed Service", "group": "통합운영/유지보수", "status": "active", "launchDate": "2024-01-01", "description": "IT 전문업체가 24시간 365일 운영하는 통합 보안 관리 서비스.", "price": "상담 문의" },
-  { "id": "ms-wifi-hosting", "name": "WiFi hosting", "category": "Managed Service", "group": "기업용 WiFi", "status": "active", "launchDate": "2024-01-01", "description": "사업장에 안정적인 무선 네트워크 환경을 제공하는 서비스.", "price": "상담 문의" },
-  { "id": "ms-smartwan", "name": "SmartWAN", "category": "Managed Service", "group": "Global SD-WAN", "status": "active", "launchDate": "2024-01-01", "description": "국내외 네트워크를 통합 연결하는 광역 네트워크(SD-WAN) 솔루션.", "price": "상담 문의" },
-
-  { "id": "care-consulting", "name": "ICT 인프라 맞춤형 컨설팅", "category": "고객 케어", "status": "active", "launchDate": "2024-01-01", "description": "기업 규모·업종별 맞춤형 ICT 인프라 컨설팅 및 케어 프로그램. (세부 상품은 상담을 통해 안내)", "price": "상담 문의" }
+  {
+    "id": "int-biz",
+    "name": "기업 초고속인터넷 (Biz인터넷)",
+    "category": "유선 인터넷",
+    "group": "기업 인터넷",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "속도는 높이고 요금은 낮춘 합리적인 기업용 인터넷 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "합리적인 요금으로 안정적인 대역폭을 제공하는 기업용 인터넷",
+      "약정 기간·속도별 유연한 상품 구성 가능",
+      "장애 발생 시 우선 출동 및 복구 지원"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "100M",
+          "value": "월 39,000원대~"
+        },
+        {
+          "label": "500M",
+          "value": "월 55,000원대~"
+        },
+        {
+          "label": "1G",
+          "value": "월 79,000원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "int-premium-prebeam",
+    "name": "인터넷전용회선 프리빔",
+    "category": "유선 인터넷",
+    "group": "프리미엄 인터넷",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "고품질 전용 대역폭 기반 프리미엄 인터넷 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "고품질 전용 대역폭 기반의 프리미엄 인터넷 회선",
+      "트래픽 변동이 큰 업무 환경에서도 안정적인 속도 유지",
+      "SLA(서비스수준협약) 기반 품질 보장"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "1G 대역",
+          "value": "월 40만원대~"
+        },
+        {
+          "label": "10G 대역",
+          "value": "월 150만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "int-premium-id",
+    "name": "인터넷전용회선 I/D",
+    "category": "유선 인터넷",
+    "group": "프리미엄 인터넷",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "안정적인 전용회선 기반의 프리미엄 인터넷 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "물리적으로 독립된 전용회선 기반의 프리미엄 인터넷",
+      "타 회선과 대역폭을 공유하지 않아 속도 저하 없음",
+      "보안이 중요한 업무 환경에 적합"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "100M 대역",
+          "value": "월 15만원대~"
+        },
+        {
+          "label": "1G 대역",
+          "value": "월 45만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "int-edu",
+    "name": "교육전산망 인터넷서비스",
+    "category": "유선 인터넷",
+    "group": "프리미엄 인터넷",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "교육기관 전산망 전용의 프리미엄 인터넷 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "교육기관 전산망에 특화된 프리미엄 인터넷 서비스",
+      "온라인 수업·시험 등 트래픽 집중 상황에도 안정적 지원",
+      "교육기관 대상 별도 운영·상담 체계"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "100M 대역",
+          "value": "월 12만원대~"
+        },
+        {
+          "label": "1G 대역",
+          "value": "월 35만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "line-domestic",
+    "name": "국내전용회선",
+    "category": "유선 인터넷",
+    "group": "전용회선",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "지사 간 안정적인 데이터 연결을 위한 국내 전용회선.",
+    "price": "상담 문의",
+    "features": [
+      "지사 간 데이터를 안정적으로 연결하는 국내 전용회선",
+      "구간 거리·용량에 따른 맞춤 구성",
+      "회선 이중화 옵션으로 장애 시 자동 절체 가능"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "동일 권역 구간",
+          "value": "월 20만원대~"
+        },
+        {
+          "label": "광역/장거리 구간",
+          "value": "월 60만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "line-carrier-ethernet",
+    "name": "캐리어이더넷",
+    "category": "유선 인터넷",
+    "group": "전용회선",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "이더넷 기반의 고속 광대역 전용회선.",
+    "price": "상담 문의",
+    "features": [
+      "이더넷 기반의 고속 광대역 전용회선",
+      "대용량 데이터 전송에 적합한 낮은 지연시간",
+      "1G~10G급 대역폭 확장 가능"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "1G 이더넷",
+          "value": "월 50만원대~"
+        },
+        {
+          "label": "10G 이더넷",
+          "value": "월 180만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "line-qkd",
+    "name": "양자암호전용회선",
+    "category": "유선 인터넷",
+    "group": "전용회선",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "양자키분배(QKD) 기술을 적용한 초고보안 전용회선.",
+    "price": "상담 문의",
+    "features": [
+      "양자키분배(QKD) 기술을 적용한 초고보안 전용회선",
+      "이론적으로 도청이 불가능한 양자 암호키 교환 방식",
+      "금융·공공 등 최고 수준 보안이 필요한 구간에 적합"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "기본 구간(QKD 적용)",
+          "value": "월 300만원대~"
+        },
+        {
+          "label": "장거리/이중화 구성",
+          "value": "별도 견적"
+        }
+      ]
+    }
+  },
+  {
+    "id": "line-pqc",
+    "name": "양자내성암호전용회선",
+    "category": "유선 인터넷",
+    "group": "전용회선",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "양자컴퓨터 공격에 대비한 내성암호 적용 전용회선.",
+    "price": "상담 문의",
+    "features": [
+      "양자컴퓨터 공격에 대비한 내성암호(PQC) 적용 전용회선",
+      "기존 암호체계 대비 향상된 미래 보안성",
+      "일반 전용회선 대비 합리적인 비용으로 도입 가능"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "기본 구간(PQC 적용)",
+          "value": "월 80만원대~"
+        },
+        {
+          "label": "장거리/이중화 구성",
+          "value": "별도 견적"
+        }
+      ]
+    }
+  },
+  {
+    "id": "line-broadcast",
+    "name": "방송전용회선",
+    "category": "유선 인터넷",
+    "group": "전용회선",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "방송용 영상·데이터 전송에 특화된 전용회선.",
+    "price": "상담 문의",
+    "features": [
+      "방송용 영상·데이터 전송에 특화된 전용회선",
+      "SD/HD/UHD 등 다양한 영상 포맷 전송 지원",
+      "생방송 등 실시간성이 중요한 환경에 최적화"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "SD/HD급 영상 전송",
+          "value": "월 100만원대~"
+        },
+        {
+          "label": "UHD급 이상",
+          "value": "별도 견적"
+        }
+      ]
+    }
+  },
+  {
+    "id": "line-vpn",
+    "name": "VPN",
+    "category": "유선 인터넷",
+    "group": "전용회선",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "가상사설망 기반의 보안 네트워크 연결 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "가상사설망(VPN) 기반의 보안 네트워크 연결 서비스",
+      "본사-지사, 재택근무 환경까지 안전하게 연결",
+      "암호화 터널링으로 외부 노출 없이 데이터 송수신"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "거점 1개소 기준",
+          "value": "월 15만원대~"
+        },
+        {
+          "label": "다거점 통합 구성",
+          "value": "별도 견적"
+        }
+      ]
+    }
+  },
+  {
+    "id": "line-global",
+    "name": "국제데이터",
+    "category": "유선 인터넷",
+    "group": "전용회선",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "해외 지사·거점 간 데이터 연결 전용회선 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "해외 지사·거점 간 데이터 연결을 위한 국제 전용회선",
+      "아시아·미주·유럽 등 주요 권역 커버",
+      "국내-해외 구간 통합 관제 및 장애 대응"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "아시아 구간",
+          "value": "월 200만원대~"
+        },
+        {
+          "label": "미주/유럽 구간",
+          "value": "별도 견적"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tel-analog",
+    "name": "일반전화(중계선)",
+    "category": "통신",
+    "group": "기업전화",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "기본적인 중계선 기반의 기업 전화 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "중계선 기반의 기본형 기업 전화 서비스",
+      "기존 전화 설비와 호환되는 안정적인 구성",
+      "회선 수 확장이 쉬움"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "10회선 이하",
+          "value": "월 5만원대~"
+        },
+        {
+          "label": "50회선 이상",
+          "value": "월 20만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tel-voip-line",
+    "name": "인터넷전화 실선",
+    "category": "통신",
+    "group": "기업전화",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "인터넷 기반의 전용 인터넷전화 솔루션.",
+    "price": "상담 문의",
+    "features": [
+      "인터넷 회선을 활용한 전용 인터넷전화 솔루션",
+      "별도 교환기 없이 간편하게 도입 가능",
+      "통화 품질과 요금 효율을 동시에 확보"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "회선당 월 이용료",
+          "value": "월 4,000원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tel-voip-pbx",
+    "name": "인터넷전화(교환기설치형)",
+    "category": "통신",
+    "group": "기업전화",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "교환기(PBX) 방식으로 구성하는 인터넷전화 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "교환기(PBX) 방식으로 구성하는 인터넷전화 서비스",
+      "내선·외선 통합 관리에 적합한 구조",
+      "대규모 사업장의 복잡한 착발신 정책 지원"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "10회선 이하",
+          "value": "월 8만원대~"
+        },
+        {
+          "label": "50회선 이상",
+          "value": "월 30만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tel-mobicall",
+    "name": "모비콜(Webex)",
+    "category": "통신",
+    "group": "기업전화",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "화상회의 및 협업을 지원하는 솔루션.",
+    "price": "상담 문의",
+    "features": [
+      "Webex 기반의 화상회의 및 협업 솔루션",
+      "PC·모바일 어디서나 동일한 회의 환경 제공",
+      "화면 공유, 녹화 등 협업 기능 내장"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "라이선스 1개 기준",
+          "value": "월 15,000원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tel-international",
+    "name": "국제전화",
+    "category": "통신",
+    "group": "기업전화",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "해외 통화를 위한 국제전화 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "해외 통화를 위한 국제전화 서비스",
+      "국가별 통화 품질과 요금 최적화",
+      "별도 앱 설치 없이 기존 회선으로 이용 가능"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "일반 국제통화(분당)",
+          "value": "100원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tel-national-number",
+    "name": "전국대표번호",
+    "category": "통신",
+    "group": "기업전화",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "전국 어디서나 동일하게 사용하는 대표번호 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "전국 어디서나 동일한 번호로 응대하는 대표번호 서비스",
+      "지역 확장 시에도 번호 변경 불필요",
+      "브랜드 신뢰도 제고에 유리"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "번호 1개 기준",
+          "value": "월 11,000원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tel-080",
+    "name": "080수신자부담전화",
+    "category": "통신",
+    "group": "기업전화",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "고객이 통화료를 부담하지 않는 착신과금 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "고객이 통화료를 부담하지 않는 착신과금(수신자부담) 서비스",
+      "고객 문의·상담 접점의 진입장벽을 낮춤",
+      "통화량 기반 리포트로 응대 현황 파악 가능"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "번호 1개 기준",
+          "value": "월 15,000원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tel-050",
+    "name": "050안심번호",
+    "category": "통신",
+    "group": "기업전화",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "개인정보를 보호하는 안심번호 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "실제 연락처 대신 사용하는 개인정보 보호용 안심번호",
+      "배송·중개 등 개인정보 노출이 우려되는 서비스에 적합",
+      "통화 종료 후 번호 매핑 자동 해제"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "번호 1개 기준",
+          "value": "월 2,000원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cc-cloud",
+    "name": "클라우드 컨택센터",
+    "category": "통신",
+    "group": "콜센터(컨택센터)",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "클라우드 기반의 상담·고객관리 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "클라우드 기반으로 별도 장비 구축 없이 운영하는 컨택센터",
+      "상담원 증감이 잦은 환경에 유연하게 대응",
+      "상담 이력·통계 관리 기능 제공"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "10석 이하",
+          "value": "월 30만원대~"
+        },
+        {
+          "label": "50석 이상",
+          "value": "월 120만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cc-omni",
+    "name": "옴니채널 컨택센터",
+    "category": "통신",
+    "group": "콜센터(컨택센터)",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "업종별 특화 기능을 제공하는 다중채널 컨택센터.",
+    "price": "상담 문의",
+    "features": [
+      "전화·채팅·메시지 등 다중 채널을 통합 운영하는 컨택센터",
+      "채널 간 상담 이력 연동으로 일관된 고객 응대",
+      "업종별 특화 기능 옵션 제공"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "10석 이하",
+          "value": "월 40만원대~"
+        },
+        {
+          "label": "50석 이상",
+          "value": "월 150만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cc-custom",
+    "name": "업종맞춤형 컨택센터",
+    "category": "통신",
+    "group": "콜센터(컨택센터)",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "산업별 특화 기능을 제공하는 맞춤형 컨택센터.",
+    "price": "상담 문의",
+    "features": [
+      "산업별 업무 프로세스에 맞춘 맞춤형 컨택센터",
+      "기존 업무 시스템과의 연동 커스터마이징 지원",
+      "전담 구축 컨설팅 제공"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "기본 패키지",
+          "value": "월 50만원대~"
+        },
+        {
+          "label": "업종 맞춤 커스터마이징",
+          "value": "별도 견적"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cc-webfax",
+    "name": "웹팩스",
+    "category": "통신",
+    "group": "콜센터(컨택센터)",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "팩스 기기 없이 인터넷으로 팩스를 송수신하는 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "팩스 기기 없이 인터넷으로 팩스를 송수신하는 서비스",
+      "이메일·웹으로 팩스 수신 확인 가능",
+      "종이·토너 비용 절감"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "회선 1개 기준",
+          "value": "월 11,000원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "premise-comm",
+    "name": "구내통신",
+    "category": "통신",
+    "group": "구내통신",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "빌딩 단위 맞춤형 통신 인프라 구축 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "빌딩 단위로 설계하는 맞춤형 구내통신 인프라",
+      "층별/구역별 배선 설계 및 시공 지원",
+      "신축·리모델링 사업장에 적합"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "소규모 사업장(1개 층)",
+          "value": "별도 견적"
+        },
+        {
+          "label": "대형/다층 건물",
+          "value": "별도 견적"
+        }
+      ]
+    }
+  },
+  {
+    "id": "msg-biz",
+    "name": "비즈메시징",
+    "category": "통신",
+    "group": "메시징",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "안정적인 대량 메시지 발송 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "대량 문자 발송에 최적화된 비즈메시징 서비스",
+      "SMS/LMS/MMS 등 다양한 포맷 지원",
+      "발송 결과 리포트 제공"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "SMS(단문) 1건",
+          "value": "10원대~"
+        },
+        {
+          "label": "LMS/MMS 1건",
+          "value": "30원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "msg-receive-national",
+    "name": "메시지 수신(전국대표번호)",
+    "category": "통신",
+    "group": "메시징",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "전국대표번호로 메시지를 수신하는 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "전국대표번호로 문자메시지를 수신하는 서비스",
+      "고객 문의를 대표번호 하나로 통합 관리",
+      "상담원 배정과 연계 가능"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "번호 1개 기준",
+          "value": "월 11,000원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "msg-reject-080",
+    "name": "메시지 수신거부(080)",
+    "category": "통신",
+    "group": "메시징",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "080번호의 메시지 수신을 거부하는 기능.",
+    "price": "상담 문의",
+    "features": [
+      "080 수신자부담번호의 문자 수신을 차단하는 기능",
+      "불필요한 스팸성 문자 유입 방지",
+      "번호 운영 정책에 맞춰 On/Off 설정"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "번호 1개 기준",
+          "value": "월 2,000원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "msg-thankyou-national",
+    "name": "땡큐메시지(전국대표번호)",
+    "category": "통신",
+    "group": "메시징",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "전국대표번호 기반 부재중 응답 메시지 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "전국대표번호 기반 부재중 자동 응답 메시지 서비스",
+      "부재중 문의에도 최소한의 응대 제공",
+      "문구 커스터마이징 가능"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "번호 1개 기준",
+          "value": "월 3,000원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "msg-thankyou-voip",
+    "name": "땡큐메시지(인터넷전화)",
+    "category": "통신",
+    "group": "메시징",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "인터넷전화 기반 부재중 응답 메시지 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "인터넷전화 기반 부재중 자동 응답 메시지 서비스",
+      "통화 미응대 시에도 고객에게 안내 문자 자동 발송",
+      "문구 커스터마이징 가능"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "회선 1개 기준",
+          "value": "월 3,000원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tel-caller-id",
+    "name": "발신자정보표시(비즈레터링)",
+    "category": "통신",
+    "group": "기업전화 부가서비스",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "발신 시 기업 정보를 표시하는 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "발신 시 기업명 등 정보를 표시하는 비즈레터링 서비스",
+      "스팸 번호로 오인되는 것을 방지",
+      "고객 응대 신뢰도 향상"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "회선당 월 이용료",
+          "value": "월 2,000원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tel-musicring",
+    "name": "비즈통화연결음(뮤직링)",
+    "category": "통신",
+    "group": "기업전화 부가서비스",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "통화 연결 대기 중 음악·안내를 제공하는 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "통화 연결 대기 중 음악·안내멘트를 제공하는 서비스",
+      "상품·이벤트 안내 등 마케팅 용도로 활용 가능",
+      "콘텐츠 주기적 교체 가능"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "회선당 월 이용료",
+          "value": "월 3,000원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tel-simple-crm",
+    "name": "통화고객관리(Simple CRM)",
+    "category": "통신",
+    "group": "기업전화 부가서비스",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "통화 기록 기반의 간편 고객관리 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "통화 기록 기반의 간편한 고객관리 서비스",
+      "발신·수신 이력을 자동으로 축적",
+      "복잡한 CRM 도입 없이 기본 고객관리 가능"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "회선당 월 이용료",
+          "value": "월 5,000원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tel-ai-recording",
+    "name": "AI 비즈레코딩",
+    "category": "통신",
+    "group": "기업전화 부가서비스",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "통화 녹취 및 AI 분석 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "통화 내용을 녹취하고 AI로 분석하는 서비스",
+      "상담 품질 관리 및 분쟁 대응 근거 확보",
+      "키워드·감정 분석 등 부가 인사이트 제공"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "회선당 월 이용료",
+          "value": "월 6,000원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sec-soda",
+    "name": "주문형 네트워크 보안(SODA)",
+    "category": "정보보안",
+    "group": "보안 장비 서비스",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "보안 위협으로부터 정보자산을 지키는 관리형 네트워크 보안 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "필요한 시점에 필요한 만큼 적용하는 주문형 네트워크 보안",
+      "고정 장비 투자 없이 보안 위협에 유연하게 대응",
+      "트래픽 급증 구간에서도 안정적인 방어"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "스루풋 100M급",
+          "value": "월 10만원대~"
+        },
+        {
+          "label": "스루풋 1G급 이상",
+          "value": "월 40만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sec-utm-lease",
+    "name": "통합보안(임대형)",
+    "category": "정보보안",
+    "group": "보안 장비 서비스",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "보안 기능을 포함한 통합 솔루션을 임차 방식으로 제공.",
+    "price": "상담 문의",
+    "features": [
+      "방화벽·IPS 등 보안 기능을 통합한 UTM 장비 임대 서비스",
+      "장비 구매 없이 월 임대료로 최신 보안 유지",
+      "장애 시 장비 교체·유지보수 포함"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "소규모 사업장",
+          "value": "월 8만원대~"
+        },
+        {
+          "label": "중대형 사업장",
+          "value": "월 30만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sec-utm-soda-lease",
+    "name": "UTM/SODA 임대서비스",
+    "category": "정보보안",
+    "group": "보안 장비 서비스",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "통합 위협 관리 및 네트워크 보안 솔루션 임대 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "UTM과 주문형 네트워크 보안(SODA)을 결합한 임대 서비스",
+      "상시 보안과 탄력적 방어를 함께 구성",
+      "사업장 환경에 맞춘 구성 상담 제공"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "소규모 사업장",
+          "value": "월 12만원대~"
+        },
+        {
+          "label": "중대형 사업장",
+          "value": "월 45만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sec-vuln-analysis",
+    "name": "취약점 분석",
+    "category": "정보보안",
+    "group": "보안 컨설팅",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "자동화 솔루션으로 보안 취약점을 파악하는 분석 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "자동화 솔루션 기반의 보안 취약점 분석 서비스",
+      "웹·서버·네트워크 전 영역 점검",
+      "결과 보고서와 개선 가이드 제공"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "단발성 진단",
+          "value": "건당 300만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sec-pentest",
+    "name": "모의해킹",
+    "category": "정보보안",
+    "group": "보안 컨설팅",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "최신 해킹 동향을 반영한 모의 침투 테스트 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "최신 해킹 동향을 반영한 모의 침투 테스트",
+      "실제 공격 시나리오 기반 취약점 실증",
+      "ISMS-P 등 인증 대응에 활용 가능"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "단발성 모의해킹",
+          "value": "건당 500만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sec-isms-p",
+    "name": "ISMS-P 인증 컨설팅",
+    "category": "정보보안",
+    "group": "보안 컨설팅",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "정보보호관리체계(ISMS-P) 인증 취득 지원 컨설팅.",
+    "price": "상담 문의",
+    "features": [
+      "정보보호관리체계(ISMS-P) 인증 취득 지원 컨설팅",
+      "심사 기준에 맞춘 정책·문서 정비 지원",
+      "사전 진단부터 인증 취득까지 단계별 지원"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "인증 취득 컨설팅",
+          "value": "프로젝트 단가 별도 견적"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sec-email",
+    "name": "기업 이메일 보안",
+    "category": "정보보안",
+    "group": "기업 이메일 보안",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "이메일을 표적으로 한 사이버 공격을 탐지·방어하는 솔루션.",
+    "price": "상담 문의",
+    "features": [
+      "이메일을 표적으로 한 사이버 공격을 탐지·차단",
+      "스팸·피싱·악성코드 첨부파일 필터링",
+      "계정 단위 세밀한 정책 설정 가능"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "계정당 월 이용료",
+          "value": "월 3,000원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sec-ddos-saas",
+    "name": "DDoS클린존(서비스형)",
+    "category": "정보보안",
+    "group": "DDoS 방어",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "클라우드 기반 분산서비스거부(DDoS) 공격 방어 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "클라우드 기반으로 별도 장비 없이 이용하는 DDoS 방어",
+      "대규모 트래픽 공격 발생 시 자동 방어 전환",
+      "탄력적 방어 용량 확장 가능"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "방어 용량 1Gbps급",
+          "value": "월 30만원대~"
+        },
+        {
+          "label": "방어 용량 10Gbps급 이상",
+          "value": "별도 견적"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sec-ddos-onprem",
+    "name": "DDoS클린존(구축형)",
+    "category": "정보보안",
+    "group": "DDoS 방어",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "자체 구축형 DDoS 공격 방어 솔루션.",
+    "price": "상담 문의",
+    "features": [
+      "자체 인프라에 구축하는 DDoS 방어 솔루션",
+      "내부 정책에 맞춘 세밀한 방어 규칙 설정",
+      "대용량 트래픽 환경에 적합"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "구축형(장비+운영)",
+          "value": "별도 견적"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sec-waf",
+    "name": "Cloud WAF(웹방화벽)",
+    "category": "정보보안",
+    "group": "Cloud WAF",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "웹사이트를 해킹 위협으로부터 보호하는 클라우드 웹방화벽.",
+    "price": "상담 문의",
+    "features": [
+      "웹사이트를 해킹 위협으로부터 보호하는 클라우드 웹방화벽",
+      "SQL 인젝션, XSS 등 주요 웹 공격 탐지·차단",
+      "별도 장비 설치 없이 빠른 적용 가능"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "도메인 1개 기준",
+          "value": "월 10만원대~"
+        },
+        {
+          "label": "트래픽 종량 옵션",
+          "value": "사용량 기반 과금"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sec-endpoint",
+    "name": "주문형 엔드포인트 보안",
+    "category": "정보보안",
+    "group": "정보보호 솔루션",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "단말기를 보호하는 주문형 엔드포인트 보안 솔루션.",
+    "price": "상담 문의",
+    "features": [
+      "PC·노트북 등 단말기를 보호하는 주문형 엔드포인트 보안",
+      "악성코드·랜섬웨어 실시간 탐지",
+      "원격 근무 환경에서도 일관된 보안 정책 적용"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "단말 1대 기준",
+          "value": "월 1,000원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sec-db-encryption",
+    "name": "DB 암호화",
+    "category": "정보보안",
+    "group": "정보보호 솔루션",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "데이터베이스 정보를 암호화하여 보호하는 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "데이터베이스에 저장된 정보를 암호화하여 보호",
+      "개인정보보호법 등 규제 대응에 활용",
+      "성능 저하를 최소화한 암호화 방식 적용"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "서버 1식 기준",
+          "value": "월 5만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sec-bizsafer",
+    "name": "비즈세이퍼",
+    "category": "정보보안",
+    "group": "정보보호 솔루션",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "인터넷 위협으로부터 기업 정보를 방어하는 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "인터넷을 통한 각종 위협으로부터 기업 정보를 방어",
+      "웹 접속·다운로드 등 사용자 행위 기반 위협 차단",
+      "관리자 콘솔로 정책 일괄 적용"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "계정당 월 이용료",
+          "value": "월 2,000원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sec-home-network",
+    "name": "홈네트워크 보안서비스",
+    "category": "정보보안",
+    "group": "홈네트워크 보안",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "공동주택 등 건물의 망 분리 보안 솔루션.",
+    "price": "상담 문의",
+    "features": [
+      "공동주택 등 건물의 망 분리 보안 솔루션",
+      "세대 간 네트워크 침입 및 정보 유출 방지",
+      "건물 단위 통합 보안 정책 적용"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "세대당 월 이용료",
+          "value": "월 1,000원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cloud-pc-onprem",
+    "name": "Cloud PC(구축형)",
+    "category": "Cloud",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "고객사에 직접 구축하고 운영하는 VDI 기반 Cloud PC 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "고객사에 직접 구축·운영하는 VDI 기반 Cloud PC",
+      "내부망 폐쇄 환경 등 보안 요건이 높은 조직에 적합",
+      "기존 자산을 활용한 맞춤형 구성 가능"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "구축형(온프레미스)",
+          "value": "별도 견적(구축비+운영비)"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cloud-pc-saas",
+    "name": "Cloud PC(서비스형)",
+    "category": "Cloud",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "데이터센터 인프라와 운영을 위탁하는 DaaS 방식의 가상 데스크톱 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "데이터센터 인프라와 운영을 위탁하는 DaaS 방식 가상 데스크톱",
+      "초기 구축비용 없이 월 구독형으로 이용",
+      "언제 어디서나 동일한 업무 환경 접속"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "1좌석(SaaS형)",
+          "value": "월 3만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cloud-secure-recording",
+    "name": "클라우드 보안 녹음",
+    "category": "Cloud",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "이중인증 기반 관리자 페이지에서 상시 청음·다운로드가 가능한 통신 녹음 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "이중인증 기반 관리자 페이지에서 상시 청음·다운로드 가능",
+      "통화 녹음의 위변조 방지 및 이력 관리",
+      "감사·분쟁 대응 근거자료로 활용"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "1채널 기준",
+          "value": "월 5,000원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "media-btv",
+    "name": "기업 B tv",
+    "category": "미디어",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "사업장에 맞춤형 미디어 환경을 제공하는 방송 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "사업장에 맞춤형 미디어 환경을 제공하는 방송 서비스",
+      "대기 공간·매장 등에서 활용 가능한 채널 구성",
+      "설치 규모에 따른 유연한 구성"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "1개소 기준",
+          "value": "월 2만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "media-onair-onad",
+    "name": "On-Air/On-Ad",
+    "category": "미디어",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "매장·사업장에서 타겟 맞춤형 광고를 송출하는 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "매장·사업장에서 타겟 맞춤형 광고를 송출하는 서비스",
+      "시간대·구역별 콘텐츠 편성 가능",
+      "콘텐츠 제작·송출 통합 관리"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "1개소 기준",
+          "value": "월 3만원대~"
+        },
+        {
+          "label": "콘텐츠 제작 옵션",
+          "value": "별도 견적"
+        }
+      ]
+    }
+  },
+  {
+    "id": "media-pharmacy-kiosk",
+    "name": "약국 On-Kiosk",
+    "category": "미디어",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "약국의 처방전 접수·결제를 무인으로 지원하는 키오스크 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "약국의 처방전 접수·결제를 무인으로 지원하는 키오스크",
+      "대기 시간 단축과 접수 오류 감소",
+      "약국 업무 특성에 맞춘 UI 구성"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "키오스크 1대 기준",
+          "value": "월 5만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "idc-intro",
+    "name": "IDC 소개",
+    "category": "Data Center",
+    "group": "IDC",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "최첨단 인프라와 광대역 네트워크 기반의 24시간 365일 데이터센터 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "최첨단 인프라와 광대역 네트워크 기반의 24시간 365일 데이터센터",
+      "이중화된 전력·냉방·네트워크 설비",
+      "상면 규모에 따른 유연한 임대 구성"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "Full Rack 1식",
+          "value": "월 80만원대~"
+        },
+        {
+          "label": "Half/Quarter Rack",
+          "value": "월 30만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "idc-security",
+    "name": "보안",
+    "category": "Data Center",
+    "group": "부가서비스",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "IDC 이용 고객을 위한 정보 자산 보호 부가서비스.",
+    "price": "상담 문의",
+    "features": [
+      "IDC 이용 고객을 위한 정보 자산 보호 부가서비스",
+      "물리 보안과 네트워크 보안을 함께 구성",
+      "랙 단위 맞춤 적용"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "랙 1식 기준",
+          "value": "월 10만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "idc-ddos",
+    "name": "디도스보안",
+    "category": "Data Center",
+    "group": "부가서비스",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "IDC 이용 고객을 위한 분산 공격 방어 부가서비스.",
+    "price": "상담 문의",
+    "features": [
+      "IDC 이용 고객을 위한 분산 공격 방어 부가서비스",
+      "상면 이용 회선에 대한 상시 트래픽 모니터링",
+      "공격 탐지 시 자동 방어 전환"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "랙 1식 기준",
+          "value": "월 15만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "idc-backup",
+    "name": "백업",
+    "category": "Data Center",
+    "group": "부가서비스",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "데이터 백업 및 복구 부가서비스.",
+    "price": "상담 문의",
+    "features": [
+      "IDC 서버 데이터의 백업 및 복구 부가서비스",
+      "정기 백업 스케줄 자동화",
+      "장애 발생 시 신속한 데이터 복구 지원"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "백업 용량 1TB 기준",
+          "value": "월 5만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "idc-managed",
+    "name": "Managed 운영대행",
+    "category": "Data Center",
+    "group": "부가서비스",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "IDC 운영을 전문가에게 위탁하는 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "IDC 운영을 전문가에게 위탁하는 관리형 서비스",
+      "24시간 모니터링 및 장애 대응",
+      "운영 인력 없이도 안정적인 서버 운영 가능"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "기본 운영대행 패키지",
+          "value": "월 50만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "idc-sw-lease",
+    "name": "S/W 임대서비스",
+    "category": "Data Center",
+    "group": "부가서비스",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "소프트웨어 라이선스를 임대하는 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "IDC 이용 고객을 위한 소프트웨어 라이선스 임대 서비스",
+      "라이선스 구매 부담 없이 월 임대료로 이용",
+      "OS·DB·보안 솔루션 등 다양한 SW 지원"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "라이선스 1식 기준",
+          "value": "월 10만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "idc-server-hosting",
+    "name": "서버 호스팅",
+    "category": "Data Center",
+    "group": "부가서비스",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "물리 서버를 임대·호스팅하는 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "물리 서버를 임대·호스팅하는 서비스",
+      "서버 직접 구매 없이 IDC 인프라 활용",
+      "사양 변경·증설이 유연함"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "서버 1대 기준",
+          "value": "월 15만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "idc-colocation",
+    "name": "Colocation(상면/설비임대)",
+    "category": "Data Center",
+    "group": "Colocation",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "IDC 상면 및 설비를 임대하는 코로케이션 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "IDC 상면 및 전력·설비를 임대하는 코로케이션 서비스",
+      "고객이 직접 서버를 반입해 운영 가능",
+      "상면 규모별(1U~랙 단위) 유연한 임대"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "1U 상면 기준",
+          "value": "월 15만원대~"
+        },
+        {
+          "label": "랙 단위 임대",
+          "value": "별도 견적"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cdn-streaming",
+    "name": "스트리밍",
+    "category": "Data Center",
+    "group": "컨텐츠전송서비스(CDN)",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "영상 콘텐츠를 실시간 전송하는 CDN 스트리밍 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "영상 콘텐츠를 실시간으로 전송하는 CDN 스트리밍 서비스",
+      "다수 이용자 동시 접속에도 끊김 없는 전송",
+      "전국 분산 캐시 서버 활용"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "트래픽 1TB당",
+          "value": "1만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cdn-download",
+    "name": "다운로드",
+    "category": "Data Center",
+    "group": "컨텐츠전송서비스(CDN)",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "파일 다운로드를 가속화하는 CDN 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "대용량 파일 다운로드를 가속화하는 CDN 서비스",
+      "이용자와 가까운 캐시 서버에서 파일 전송",
+      "트래픽 폭주 시에도 안정적인 다운로드 속도"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "트래픽 1TB당",
+          "value": "8,000원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cdn-image",
+    "name": "이미지 전송",
+    "category": "Data Center",
+    "group": "컨텐츠전송서비스(CDN)",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "이미지 콘텐츠를 최적화 전송하는 CDN 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "이미지 콘텐츠를 최적화하여 전송하는 CDN 서비스",
+      "이미지 리사이징·압축 자동 처리",
+      "웹·앱 로딩 속도 개선에 기여"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "트래픽 1TB당",
+          "value": "6,000원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ms-lte-vpn",
+    "name": "LTE Modem/VPN",
+    "category": "Managed Service",
+    "group": "Network Infra",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "모바일 네트워크와 VPN을 결합한 연결 솔루션.",
+    "price": "상담 문의",
+    "features": [
+      "모바일 네트워크와 VPN을 결합한 이동형 연결 솔루션",
+      "고정 회선 설치가 어려운 현장에 적합",
+      "이동 중에도 안전한 데이터 통신 유지"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "단말 1대 기준",
+          "value": "월 2만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ms-switch-router",
+    "name": "Switch/Router",
+    "category": "Managed Service",
+    "group": "Network Infra",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "네트워크 장비를 제공하는 인프라 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "스위치·라우터 등 네트워크 장비를 제공하는 인프라 서비스",
+      "장비 구매 없이 임대 방식으로 최신 장비 사용",
+      "장애 시 장비 교체 포함"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "장비 1대 기준(임대)",
+          "value": "월 3만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ms-smart-access",
+    "name": "Smart Access",
+    "category": "Managed Service",
+    "group": "Network Infra",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "고객 맞춤형 스마트 네트워크 접근 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "고객 맞춤형 스마트 네트워크 접근 서비스",
+      "거점별 접속 정책을 통합 관리",
+      "신규 거점 확장 시 빠른 구성 반영"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "거점 1개소 기준",
+          "value": "월 5만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ms-security-ops",
+    "name": "보안(DB암호화/접근제어 등)",
+    "category": "Managed Service",
+    "group": "통합운영/유지보수",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "IT 전문업체가 24시간 365일 운영하는 통합 보안 관리 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "IT 전문업체가 24시간 365일 운영하는 통합 보안 관리 서비스",
+      "DB암호화·접근제어 등 다양한 보안 요소 통합 운영",
+      "내부 IT 인력 부담 없이 보안 수준 유지"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "기본 운영 패키지",
+          "value": "월 100만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ms-wifi-hosting",
+    "name": "WiFi hosting",
+    "category": "Managed Service",
+    "group": "기업용 WiFi",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "사업장에 안정적인 무선 네트워크 환경을 제공하는 서비스.",
+    "price": "상담 문의",
+    "features": [
+      "사업장에 안정적인 무선 네트워크 환경을 제공하는 서비스",
+      "AP 설치부터 운영까지 위탁 관리",
+      "다중 사업장 통합 관제 가능"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "AP 1대 기준",
+          "value": "월 1만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ms-smartwan",
+    "name": "SmartWAN",
+    "category": "Managed Service",
+    "group": "Global SD-WAN",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "국내외 네트워크를 통합 연결하는 광역 네트워크(SD-WAN) 솔루션.",
+    "price": "상담 문의",
+    "features": [
+      "국내외 네트워크를 통합 연결하는 광역 네트워크(SD-WAN) 솔루션",
+      "회선 이중화로 장애 시 자동 경로 전환",
+      "거점별 트래픽 우선순위 정책 적용"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "거점 1개소 기준",
+          "value": "월 15만원대~"
+        }
+      ]
+    }
+  },
+  {
+    "id": "care-consulting",
+    "name": "ICT 인프라 맞춤형 컨설팅",
+    "category": "고객 케어",
+    "status": "active",
+    "launchDate": "2024-01-01",
+    "description": "기업 규모·업종별 맞춤형 ICT 인프라 컨설팅 및 케어 프로그램. (세부 상품은 상담을 통해 안내)",
+    "price": "상담 문의",
+    "features": [
+      "기업 규모·업종별 맞춤형 ICT 인프라 컨설팅",
+      "현황 진단 후 필요한 상품 조합 제안",
+      "도입 이후에도 지속적인 케어 프로그램 제공"
+    ],
+    "pricing": {
+      "note": "위 요금은 특정 통신사의 실제 요금이 아니라 업계 평균 수준을 참고한 예시 요금입니다. 정확한 요금은 사업장 환경 확인 후 상담을 통해 안내드립니다.",
+      "tiers": [
+        {
+          "label": "기본 진단 컨설팅",
+          "value": "무료"
+        },
+        {
+          "label": "세부 설계/구축 컨설팅",
+          "value": "프로젝트 단가 별도 견적"
+        }
+      ]
+    }
+  }
 ]
